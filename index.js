@@ -2,10 +2,12 @@ const express = require("express");
 const dbconnection = require("./Models/mongodb");
 const morgan = require("morgan");
 const datacontrollers = require("./controllers/datacontrollers");
+const cors = require('cors')
 
 
 
 const app = express();
+app.use(cors())
 // middle wares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
