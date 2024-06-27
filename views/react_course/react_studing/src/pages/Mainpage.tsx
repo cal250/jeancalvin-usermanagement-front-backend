@@ -1,8 +1,9 @@
-
 import React from "react";
 import ContactDetails from "../components/Contactdetail";
 import GeneralInformation from "../components/Generalinformarion";
-import FormManagement from "./FormManagement";
+// import FormManagement from "./FormManagement";
+
+import UserTable from "../components/UserTable"; // Import UserTable component
 
 function MainPage() {
   return (
@@ -11,8 +12,9 @@ function MainPage() {
         <GeneralInformation />
         <ContactDetails />
       </div>
-      <div>
-      <FormManagement/>
+      <div className="ml-8">
+        {/* <FormManagement /> */}
+        {/* <UserTable /> Render UserTable component here */}
       </div>
     </div>
   );
