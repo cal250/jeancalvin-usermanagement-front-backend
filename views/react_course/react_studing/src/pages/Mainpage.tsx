@@ -2,6 +2,7 @@
 import React from "react";
 import ContactDetails from "../components/Contactdetail";
 import GeneralInformation from "../components/Generalinformarion";
+import FormManagement from "./FormManagement";
 
 function MainPage() {
   return (
@@ -9,6 +10,9 @@ function MainPage() {
       <div className="flex rounded-3xl shadow-md flex-wrap md:flex-nowrap">
         <GeneralInformation />
         <ContactDetails />
+      </div>
+      <div>
+      <FormManagement/>
       </div>
     </div>
   );
